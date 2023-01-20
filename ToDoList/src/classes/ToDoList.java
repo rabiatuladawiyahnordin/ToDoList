@@ -8,7 +8,9 @@ public class ToDoList {
 	{
 		AppFrame frame = new AppFrame();
 		(new AppFrame()).setVisible(true);
+		//(new TestCalendar()).setVisible(true);
 	}
+
 }
 
 

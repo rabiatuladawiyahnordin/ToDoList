@@ -1,22 +1,22 @@
 package classes;
 
 
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.GridLayout;
+import java.awt.*;
 
 import javax.swing.JPanel;
 
 public class List extends JPanel{
 
+
 	List()
 	{
 		
 		GridLayout layout = new GridLayout(10,1);
-		layout.setVgap(5);
+		layout.setVgap(5); //Vertical gap
 		
-		this.setLayout(layout);
+		this.setLayout(layout); //10 Tasks
 		this.setPreferredSize(new Dimension(400,560));
+		this.setBackground(Color.lightGray);
 		
 	}
 	
@@ -43,8 +43,8 @@ public class List extends JPanel{
 			{
 				if(((Task)c).getState())
 				{
-					remove(c);
-					updateNumbers();
+					remove(c); //remove the component
+					updateNumbers(); //update the indexing of all items
 				}
 			}
 		}
