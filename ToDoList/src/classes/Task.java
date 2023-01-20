@@ -4,11 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
 
 public class Task extends JPanel{
 	
@@ -42,7 +38,17 @@ public class Task extends JPanel{
 
 		
 		this.add(taskName,BorderLayout.CENTER);
-		
+
+//		JFrame done=new JFrame("Checkbox");
+//		JCheckBox checkBox1 = new JCheckBox();
+//		checkBox1.setBounds(100,100,50,50);
+//		JCheckBox checkBox2 = new JCheckBox();
+//		checkBox2.setBounds(100,150,50,50);
+//		done.add(checkBox1);
+//		done.add(checkBox2);
+//		done.setSize(400,400);
+//		done.setLayout(null);
+//		done.setVisible(true);
 		done = new JButton("Done");
 		done.setPreferredSize(new Dimension(80,20));
 		done.setBorder(BorderFactory.createEmptyBorder());
